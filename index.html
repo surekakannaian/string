@@ -216,6 +216,11 @@
             let end = Number(document.getElementById('timee').value);
             document.getElementById("demo2").innerHTML = txt.padEnd(end, start);
         }
+          function charat() {
+            let txt = document.getElementById('chartxt').value;
+            let end = Number(document.getElementById('index').value);
+            document.getElementById("demo3").innerHTML = txt.charAt(end);
+        }
         function charcodeat() {
             let txt = document.getElementById('charcodetxt').value;
             let end = Number(document.getElementById('indexcode').value);
