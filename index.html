@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-bg-dark p-3 text-center mt-3">STRING METHODS</h1>
+        <h2>1.Length of the string <span class="text-danger">( .length )</span></h2>
+        <input type="text" id="strlen" value="hello!">
+        <button type="button" class="btn btn-success" onclick="len()">Try it</button>
+        <p class="text-primary" id="len"></p>
+        <!--slice-->
+        <h2>2.Slice the Strings <span class="text-danger">( slice(start,end) )</span></h2>
+        <input type="text" id="strslice" value="hello!">
+        <label for="">start</label>
+        <input type="text" id="star1" placeholder="0">
+        <label for="">end</label>
+        <input type="text" id="end1" placeholder="0">
+        <button type="button" class="btn btn-success" onclick="slice()">Try it</button>
+        <p class="text-primary" id="slice"></p>
+        <!--slice substr-->
+        <h2>3.Slice the Strings <span class="text-danger">( substring(start,end) )</span></h2>
+        <input type="text" id="substring" value="hello!">
+        <label for="">start</label>
+        <input type="text" id="star2" placeholder="0">
+        <label for="">end</label>
+        <input type="text" id="end2" placeholder="0">
+        <button type="button" class="btn btn-success" onclick="substring()">Try it</button>
+        <p class="text-primary" id="subslicestr"></p>
+        <!--slice substr-->
+        <h2>4.Slice the Strings <span class="text-danger">( substr(start,end) )</span></h2>
+        <input type="text" id="substr" value="hello!">
+        <label for="">start</label>
+        <input type="text" id="star2" placeholder="0">
+        <label for="">end</label>
+        <input type="text" id="end2" placeholder="0">
+        <button type="button" class="btn btn-success" onclick="substr()">Try it</button>
+        <p class="text-primary" id="subslice"></p>
+        <!--slice replace-->
+        <h2>5.Replace the Strings <span class="text-danger">( replace() )</span></h2>
+        <input type="text" id="text" value="hello!">
+        <label for="">Replace</label>
+        <input type="text" id="it" placeholder="which want to be replace">
+        <label for="">By</label>
+        <input type="text" id="by" placeholder="replace the string by">
+        <button type="button" class="btn btn-success" onclick="replace()">Try it</button>
+        <p class="text-primary" id="op"></p>
+        <!--slice uppercase-->
+        <h2>6.Strings uppercase <span class="text-danger">( toUpperCase() )</span></h2>
+        <input type="text" id="uppertext" value="hello!">
+        <button type="button" class="btn btn-success" onclick="upper()">Try it</button>
+        <p class="text-primary" id="upper"></p>
+        <!--slice lowercase-->
+        <h2>7.Strings lowercase <span class="text-danger">( toLowerCase() )</span></h2>
+        <input type="text" id="lowertext" value="hello!">
+        <button type="button" class="btn btn-success" onclick="lower()">Try it</button>
+        <p class="text-primary" id="lower"></p>
+        <!--trim-->
+        <h2>8.Remove white space <span class="text-danger">( trim() )</span></h2>
+        <input type="text" id="trimtext" value="  hello!  ">
+        <button type="button" class="btn btn-success" onclick="trim()">Try it</button>
+        <p class="text-primary" id="trim"></p>
+        <!--padstart-->
+        <h2>9.Add string on starting <span class="text-danger">( padstart() )</span></h2>
+        <input type="text" id="padstart" value="h">
+        <label for="">String want to add</label>
+        <input type="text" id="adds" placeholder="which want to be add">
+        <label for="">no of times-1</label>
+        <input type="text" id="times" placeholder="how many">
+        <button type="button" class="btn btn-success" onclick="pdstart()">Try it</button>
+        <p class="text-primary" id="demo"></p>
+        <!--padend-->
+        <h2>9.Add string on end <span class="text-danger">( padEnd() )</span></h2>
+        <input type="text" id="padend" value="h">
+        <label for="">String want to add</label>
+        <input type="text" id="adde" placeholder="which want to be add">
+        <label for="">no of times-1</label>
+        <input type="text" id="timee" placeholder="how many">
+        <button type="button" class="btn btn-success" onclick="pdend()">Try it</button>
+        <p class="text-primary" id="demo2"></p>
+        <!--charAt-->
+        <h2>10.Compute string on paricular index <span class="text-danger">( charAt(index) )</span></h2>
+        <input type="text" id="chartxt" value="hello! world">
+        <label for="">Position</label>
+        <input type="text" id="index" placeholder="index value">
+        <button type="button" class="btn btn-success" onclick="charat()">Try it</button>
+        <p class="text-primary" id="demo3"></p>
+        <!--charcodeAt-->
+        <h2>11.Compute unicode of character in paricular index <span class="text-danger">( charCodeAt(index) )</span>
+        </h2>
+        <input type="text" id="charcodetxt" value="hello! world">
+        <label for="">Position</label>
+        <input type="text" id="indexcode" placeholder="index value">
+        <button type="button" class="btn btn-success" onclick="charcodeat()">Try it</button>
+        <p class="text-primary" id="demo4"></p>
+        <!--indexOf-->
+        <h2>13.Compute the index of a first occurance of a string<span class="text-danger">( indexOf("string") )</span>
+        </h2>
+        <input type="text" id="indextxt" value="hello! world">
+        <input type="text" id="string" placeholder="string to find index">
+        <input type="text" id="from" placeholder="string to find index from">
+        <button type="button" class="btn btn-success" onclick="indexof()">Try it</button>
+        <p class="text-primary" id="demo5"></p>
+        <!--lastindexOf-->
+        <h2>14.Compute the index of a last occurance of a string<span class="text-danger">( lastIndexOf("string")
+                )</span>
+        </h2>
+        <input type="text" id="indexlasttxt" value="hello! world">
+        <input type="text" id="string1" placeholder="string to find index">
+        <input type="text" id="from1" placeholder="string to find index from">
+        <button type="button" class="btn btn-success" onclick="lastindexof()">Try it</button>
+        <p class="text-primary" id="demo6"></p>
+        <!--search-->
+        <h2>15.Compute the index of a string using search<span class="text-danger">( search("string") )</span>
+        </h2>
+        <input type="text" id="searchtxt" value="hello! world">
+        <input type="text" id="search" placeholder="string to find index">
+        <button type="button" class="btn btn-success" onclick="searchof()">Try it</button>
+        <p class="text-primary" id="demo7"></p>
+         <!--match-->
+         <h2>16.check the string containing a specified value<span class="text-danger">( includes("string") )</span>
+         </h2>
+         <input type="text" id="includetxt" value="hello! world">
+         <input type="text" id="include" placeholder="string to find">
+         <button type="button" class="btn btn-success" onclick="includof()">Try it</button>
+         <p class="text-primary" id="demo8"></p>
+          <!--startswith-->
+          <h2>17.check the string is starting in a specified value<span class="text-danger">( startsWith("string") )</span>
+          </h2>
+          <input type="text" id="startwithtxt" value="hello! world">
+          <input type="text" id="start" placeholder="string to find">
+          <button type="button" class="btn btn-success" onclick="startwith()">Try it</button>
+          <p class="text-primary" id="demo9"></p>
+            <!--endswith-->
+            <h2>18.check the string is end in a specified value<span class="text-danger">( endsWith("string") )</span>
+            </h2>
+            <input type="text" id="endwithtxt" value="hello! world">
+            <input type="text" id="end" placeholder="string to find">
+            <button type="button" class="btn btn-success" onclick="endwith()">Try it</button>
+            <p class="text-primary" id="demo10"></p>
+    </div>
+    <script>
+        function len() {
+            var text = document.getElementById('strlen').value;
+            document.getElementById('len').innerHTML = "Length of text is \t" + text.length;
+        }
+        function slice() {
+            var text = document.getElementById('strslice').value;
+            var start = Number(document.getElementById('star1').value);
+            var end = Number(document.getElementById('end1').value);
+            if (end == "") {
+                document.getElementById('slice').innerHTML = text.slice(start);
+            }
+            else {
+                document.getElementById('slice').innerHTML = text.slice(start, end);
+            }
+        }
+        function substr() {
+            var text = document.getElementById('substr').value;
+            var start = Number(document.getElementById('star2').value);
+            var end = Number(document.getElementById('end2').value);
+            if (end == "") {
+                document.getElementById('subslice').innerHTML = text.substr(start);
+            }
+            else {
+                document.getElementById('subslice').innerHTML = text.substr(start, end);
+            }
+        }
+        function substring() {
+            var text = document.getElementById('substring').value;
+            var start = Number(document.getElementById('star2').value);
+            var end = Number(document.getElementById('end2').value);
+            if (end == "") {
+                document.getElementById('subslicestr').innerHTML = text.substring(start);
+            }
+            else {
+                document.getElementById('subslicestr').innerHTML = text.substring(start, end);
+            }
+        }
+        function replace() {
+            var text = document.getElementById('text').value;
+            var start = document.getElementById('it').value;
+            var end = document.getElementById('by').value;
+
+            document.getElementById('op').innerHTML = text.replace(start, end);
+        }
+        function upper() {
+            var text = document.getElementById('uppertext').value;
+            document.getElementById('upper').innerHTML = text.toUpperCase();
+        }
+        function lower() {
+            var text = document.getElementById('lowertext').value;
+            document.getElementById('lower').innerHTML = text.toLowerCase();
+        }
+        function trim() {
+            var text = document.getElementById('trimtext').value;
+            document.getElementById('trim').innerHTML = text.trim();
+        }
+        function pdstart() {
+            let txt = document.getElementById('padstart').value;
+            let start = document.getElementById('adds').value;
+            let end = Number(document.getElementById('times').value);
+            document.getElementById("demo").innerHTML = txt.padStart(end, start);
+        }
+        function pdend() {
+            let txt = document.getElementById('padend').value;
+            let start = document.getElementById('adde').value;
+            let end = Number(document.getElementById('timee').value);
+            document.getElementById("demo2").innerHTML = txt.padEnd(end, start);
+        }
+        function charcodeat() {
+            let txt = document.getElementById('charcodetxt').value;
+            let end = Number(document.getElementById('indexcode').value);
+            document.getElementById("demo4").innerHTML = txt.charCodeAt(end);
+        }
+        function indexof() {
+            let txt = document.getElementById('indextxt').value;
+            let end = document.getElementById('string').value;
+            let start = Number(document.getElementById('from').value);
+            document.getElementById("demo5").innerHTML = txt.indexOf(end, start);
+        }
+        function lastindexof() {
+            let txt = document.getElementById('indexlasttxt').value;
+            let end = document.getElementById('string1').value;
+            let start = Number(document.getElementById('from1').value);
+            document.getElementById("demo6").innerHTML = txt.lastIndexOf(end, start);
+        }
+        function searchof() {
+            let txt = document.getElementById('searchtxt').value;
+            let end = document.getElementById('search').value;
+            document.getElementById("demo7").innerHTML = txt.search(end);
+        }
+        function includof() {
+            let txt = document.getElementById('includetxt').value;
+            let end = document.getElementById('include').value;
+            document.getElementById("demo8").innerHTML = txt.includes(end);
+        }
+        function startwith() {
+            let txt = document.getElementById('startwithtxt').value;
+            let end = document.getElementById('start').value;
+            document.getElementById("demo9").innerHTML = txt.startsWith(end);
+        }
+        function endwith() {
+            let txt = document.getElementById('endwithtxt').value;
+            let end = document.getElementById('end').value;
+            document.getElementById("demo10").innerHTML = txt.endsWith(end);
+        }
+    </script>
+</body>
+
+</html>
